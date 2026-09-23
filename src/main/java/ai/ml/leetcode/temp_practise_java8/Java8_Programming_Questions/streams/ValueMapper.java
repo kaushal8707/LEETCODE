@@ -1,0 +1,14 @@
+package ai.ml.leetcode.temp_practise_java8.Java8_Programming_Questions.streams;
+
+public class ValueMapper {
+    public static Product convertToProduct(InventoryProducts inventoryProducts){
+        Product product=new Product();
+        product.setId(inventoryProducts.id);
+        product.setName(inventoryProducts.name);
+        product.setProductType(inventoryProducts.productType);
+        product.setPrice(inventoryProducts.price);
+        product.setQuantity(inventoryProducts.quantity);
+        product.setSupplierName(inventoryProducts.supplierName);
+        return product;
+    }
+}

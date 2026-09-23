@@ -1,0 +1,54 @@
+Client - Server Architecture
+------------------------------
+
+Q1. What happens when there are millions of clients?
+
+You should start thinking:
+
+Clients
+   ↓
+Load Balancer
+   ↓
+Multiple Application Servers
+   ↓
+Cache
+   ↓
+Database
+Q2. What if one server fails?
+Load Balancer
+      ↓
+Health Check
+      ↓
+Route traffic to healthy servers
+Q3. What if the database becomes a bottleneck?
+
+Think:
+
+Caching
+Read Replicas
+Partitioning
+Sharding
+Q4. What if services need asynchronous communication?
+
+Think:
+
+Kafka / Message Queue
+Q5. What if a distributed operation partially fails?
+
+Think:
+
+Saga
+Retry
+Idempotency
+Transactional Outbox
+
+This is how you should gradually move from basic architecture → distributed system design.
+
+
+
+
+
+
+IP Address
+=============
+

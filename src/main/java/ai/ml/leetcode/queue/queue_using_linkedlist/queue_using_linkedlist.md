@@ -1,0 +1,1 @@
+![img.png](que1.png)
